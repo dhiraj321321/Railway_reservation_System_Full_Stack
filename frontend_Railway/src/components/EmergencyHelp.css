@@ -1,0 +1,43 @@
+.emergency-help-container {
+    padding: 1rem 0;
+}
+
+.help-description {
+    margin-bottom: 1.5rem;
+    color: #555;
+    text-align: center;
+}
+
+.contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* Space between contact items */
+}
+
+.contact-item {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #eee;
+}
+
+.contact-item h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.contact-link {
+    display: inline-flex; /* Align icon and text */
+    align-items: center;
+    gap: 0.5rem;
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}

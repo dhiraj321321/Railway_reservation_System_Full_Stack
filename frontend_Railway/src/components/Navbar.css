@@ -1,0 +1,116 @@
+/* General Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff; /* Lighter background */
+    color: #333;
+    padding: 0.75rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    position: sticky; /* Keep it at the top */
+    top: 0;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+/* Brand/Logo Styling */
+.navbar-brand {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #0056b3; /* Brand color */
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+.navbar-brand:hover {
+    color: #003d80;
+}
+
+/* Container for Links and Buttons */
+.navbar-links {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Increased spacing */
+}
+
+/* Styling for Regular Links */
+.navbar-link {
+    color: #555; /* Slightly darker grey */
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 0.5rem 0; /* Add padding for larger click area */
+    position: relative; /* Needed for the underline effect */
+    transition: color 0.2s ease;
+}
+
+/* Hover Effect for Links */
+.navbar-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #007bff;
+    transition: width 0.3s ease;
+}
+
+.navbar-link:hover::after {
+    width: 100%;
+}
+
+.navbar-link:hover {
+    color: #007bff; /* Highlight color on hover */
+}
+
+/* --- Active Link Styling --- */
+.navbar-link.active {
+    color: #007bff; /* Active link color */
+    font-weight: bold;
+}
+.navbar-link.active::after {
+    /* Keep the underline on the active link */
+    width: 100%;
+}
+
+/* Welcome Message */
+.navbar-welcome {
+    color: #777;
+    font-size: 0.9rem;
+    margin-right: 0.5rem; /* Add some space before links */
+}
+
+/* General Button Styling */
+.navbar-button {
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.95rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    text-align: center; /* Ensure text is centered if it's a NavLink */
+}
+
+.navbar-button:hover {
+    opacity: 0.9;
+}
+.navbar-button:active {
+    transform: scale(0.98); /* Slight press effect */
+}
+
+/* Specific Button Colors */
+.navbar-button.login {
+    background-color: #007bff;
+}
+.navbar-button.login:hover {
+    background-color: #0056b3;
+}
+
+.navbar-button.logout {
+    background-color: #dc3545; /* Red color for logout */
+}
+.navbar-button.logout:hover {
+    background-color: #c82333;
+}

@@ -1,0 +1,53 @@
+/* Add these styles to your existing index.css */
+
+.status-badge {
+    padding: 0.2em 0.6em;
+    font-size: 0.75rem;
+    font-weight: bold;
+    border-radius: 0.25rem;
+    text-transform: uppercase;
+    color: white;
+    white-space: nowrap;
+}
+
+.status-pending { background-color: #ffc107; color: #333; } /* Yellow */
+.status-confirmed { background-color: #28a745; } /* Green */
+.status-ordered { background-color: #17a2b8; } /* Teal */
+.status-delivered { background-color: #007bff; } /* Blue */
+.status-resolved { background-color: #6c757d; } /* Grey */
+.status-cancelled { background-color: #dc3545; } /* Red */
+
+/* Ensure page container has some padding */
+.page-container {
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Ensure forms inside modals don't have extra borders/padding */
+.modal-form {
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+}
+
+/* General form success/error messages */
+.form-success {
+    color: #155724; /* Dark green */
+    background-color: #d4edda; /* Light green */
+    border: 1px solid #c3e6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+}
+.form-error {
+    color: #721c24; /* Dark red */
+    background-color: #f8d7da; /* Light red */
+    border: 1px solid #f5c6cb;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border-radius: 0.25rem;
+    text-align: center;
+}

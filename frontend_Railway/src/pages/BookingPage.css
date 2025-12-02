@@ -1,0 +1,105 @@
+.booking-page {
+  padding: 2rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+.train-details-summary {
+  background: #f4f4f4;
+  color: #333;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.booking-form-container {
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap; /* Allows stacking on small screens */
+}
+
+.passenger-form {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #333;
+}
+
+.passenger-form input,
+.passenger-form select {
+  padding: 0.75rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.passenger-form button {
+  padding: 0.75rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+.passenger-form button:hover {
+  background-color: #0056b3;
+}
+
+.booking-summary {
+  flex: 1;
+  min-width: 300px;
+  padding: 1.5rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background: #333;
+}
+
+.passenger-list {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 1.5rem;
+}
+
+.passenger-list li {
+  background: #fafafa;
+  color: black;
+  padding: 0.5rem;
+  border-bottom: 1px solid #eee;
+  margin-bottom: 0.5rem;
+}
+
+.total-price {
+  margin-top: 1.5rem;
+  border-top: 2px solid #333;
+  padding-top: 1rem;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 3px;
+}
+
+.total-price h3 {
+  margin-bottom: 1rem;
+}
+
+.confirm-btn {
+  margin-top: 2px;
+  padding: 1rem;
+  width: 100%;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.confirm-btn:hover {
+  background-color: #218838;
+}

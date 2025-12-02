@@ -1,0 +1,113 @@
+.food-menu-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.menu-items {
+    max-height: 40vh; /* Limit height */
+    overflow-y: auto; /* Enable scrolling */
+    padding-right: 1rem; /* Space for scrollbar */
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+    border-bottom: 1px dashed #eee; /* Lighter separator */
+}
+.menu-item:last-child {
+    border-bottom: none;
+}
+
+.item-info h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #333;
+}
+
+.item-info p {
+    margin: 0;
+    color: #555;
+    font-size: 0.9rem;
+}
+
+.item-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+}
+
+.item-controls button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50%; /* Circle buttons */
+    width: 28px;
+    height: 28px;
+    font-size: 1.2rem;
+    line-height: 28px; /* Center text vertically */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.item-controls button:hover {
+    background-color: #0056b3;
+}
+
+.item-controls button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.item-controls span {
+    font-weight: bold;
+    min-width: 20px; /* Ensure space for number */
+    text-align: center;
+}
+
+.order-summary {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.order-summary h3 {
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.order-summary .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 1rem;
+}
+
+/* Re-use form styles for consistency */
+.order-summary .form-input { margin-bottom: 1rem; }
+.order-summary .form-button { margin-top: 0.5rem; }
+
+/* Styles for messages */
+.form-success {
+    color: green;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+.form-error {
+    color: red;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+/* Remove default form styling inside modal */
+.modal-form {
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    margin: 0;
+}
